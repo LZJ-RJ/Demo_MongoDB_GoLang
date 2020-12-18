@@ -1,0 +1,32 @@
+<html> 
+    <head>
+        <title>Demo Short URL</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    </head>
+    <body>
+        <table class='table table-dark table-bordered'>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Destination</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Source_Example</td>
+                    <td>Destination_Example</td>
+                </tr>
+                {{.Result}}
+            </tbody>
+        </table>
+        <hr>
+        <form method="POST" action="/url">
+            <input type="text" name="destination" placeholder="destination">
+            <input type="text" name="custom_alias" placeholder="custom_alias (optional)">
+            <input type="submit" class="btn btn-info">
+        </form>
+    </body>
+</html>
+
+
+
